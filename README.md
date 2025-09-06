@@ -43,66 +43,72 @@ Build a **Task Management Web Application** with the following core features:
 
 ## Installation Instructions
 
-1. **Download the project**
+1. Pre-requisites
 
-   * Extract the ZIP folder `task-manager.zip` to your web server root (e.g., `C:\xampp\htdocs`).
+Make sure the following are installed:
 
-2. **Install PHP dependencies**
+PHP (8.1+)
 
-   * Open terminal/cmd in the project folder:
-
-     ```bash
-     composer install
-     ```
-
-3. **Install Node.js dependencies**
-
-   * Ensure Node.js and NPM are installed.
-
-     ```bash
-     npm install
-     npm run dev
-     ```
-
-4. **Set up environment file**
-
-   * Copy `.env.example` to `.env`
-
-     ```bash
-     cp .env.example .env
-     ```
-   * Set database credentials in `.env` file:
-
-     ```env
-     DB_CONNECTION=mysql
-     DB_HOST=127.0.0.1
-     DB_PORT=3306
-     DB_DATABASE=task_manager_db
-     DB_USERNAME=root
-     DB_PASSWORD=
-     ```
-
-5. **Generate application key**
-
-   ```bash
-   php artisan key:generate
-   ```
-
-6. **Run migrations**
-
-   ```bash
-   php artisan migrate
-   ```
-
-7. **Run the development server**
-
-   ```bash
-   php artisan serve
-   ```
-
-   * Access the app at `http://127.0.0.1:8000`
+php -v
 
 
+Composer
+
+composer -v
+
+
+Node.js (v18+ recommended)
+
+node -v
+
+
+NPM
+
+npm -v
+
+
+MySQL or SQLite
+
+Install any missing software before proceeding.
+
+2. Download the Project
+
+Extract task-manager.zip to your web server root (e.g., C:\xampp\htdocs).
+
+3. Install PHP Dependencies
+composer install
+
+
+This recreates the vendor folder.
+
+4. Install Node.js Dependencies
+npm install
+npm run dev
+
+
+This recreates node_modules and compiles frontend assets. Keep this terminal open for live updates.
+
+5. Run Migrations
+php artisan migrate
+
+
+Applies database migrations.
+
+6. Run the Application
+
+Open two terminals:
+
+Terminal 1 – Compile Frontend Assets
+
+npm run dev
+
+
+Terminal 2 – Start Laravel Server
+
+php artisan serve
+
+
+Access the app at http://127.0.0.1:8000
 
 ## Features
 
