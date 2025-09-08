@@ -33,6 +33,8 @@ Make sure the following are installed:
 
 XAMPP (PHP 8.1+ and MySQL 8.x)
 
+Laravel 10.x (PHP framework)
+
 Composer 2.x
 
 Node.js (v18+) and NPM (v9+)
@@ -41,6 +43,8 @@ Node.js (v18+) and NPM (v9+)
 Check versions with:
 
 php -v
+
+php artisan --version
 
 composer -v
 
