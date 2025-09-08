@@ -97,5 +97,6 @@ Access the app at: http://127.0.0.1:8000
 
 Author
 
-Developed by: M.F.F.Infaza 
+Developed by: M.F.F.Infaza
+
 Date: 6th September 2025
