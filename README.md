@@ -1,131 +1,101 @@
-Laravel Developer Assessment (72 Hours)
+Task Management System
 
-**Objective:**
-Evaluate your ability to plan, develop, document, and share a Laravel-based web application using best practices, Git workflows, and clean code.
+Overview
 
-
-## Task
-
-Build a **Task Management Web Application** with the following core features:
-
-1. **Authentication (Laravel Breeze or Jetstream)**
-
-   * Users can register and log in.
-
-2. **Task CRUD**
-
-   * Users can create, edit, mark as completed, and delete tasks.
-   * Each task has: Title, Description, Due Date, and Status.
-
-3. **Dashboard**
-
-   * Display tasks grouped by status: Pending, In Progress, Completed.
-   * Use Blade templates with responsive, clean UI design (Tailwind preferred).
-
-4. **System Planning Document (PDF)**
-
-   * Include Tech Stack, Database schema (ER diagram or table structure), App flow overview.
-
-5. **Git & Documentation**
-
-   * Upload the complete project to a GitHub repository.
-   * Commit frequently with clear commit messages.
-   * Add a detailed README.md with project overview, installation instructions, features, and screenshots (optional).
+The Task Management System is a Laravel 10 web application built with Laravel Breeze for authentication. It allows users to create, update, delete, and manage tasks, with a dashboard to view tasks grouped by status (Pending, In Progress, Completed).
 
 
-## Technical Requirements
+---
 
-* Framework: Laravel 10+
-* Database: MySQL or SQLite
-* Front-end: Blade templates with TailwindCSS
-* Authentication: Laravel Breeze or Jetstream
-* Version Control: GitHub (public or private repo with access)
+Features
 
-## Installation Instructions
+User registration and login (Laravel Breeze)
 
-1. Pre-requisites
+Add, edit, delete, and mark tasks as completed
+
+Dashboard grouped by task status
+
+Search and filter tasks
+
+SweetAlert confirmation popups
+
+Responsive UI with TailwindCSS
+
+
+
+---
+
+Installation Instructions
+
+1. Requirements
 
 Make sure the following are installed:
 
-PHP (8.1+)
+XAMPP (PHP 8.1+ and MySQL 8.x)
+
+Composer 2.x
+
+Node.js (v18+) and NPM (v9+)
+
+
+Check versions with:
 
 php -v
 
-
-Composer
-
 composer -v
 
-
-Node.js (v18+ recommended)
-
 node -v
-
-
-NPM
 
 npm -v
 
 
-MySQL or SQLite
+---
 
-Install any missing software before proceeding.
+2. Setup Steps
 
-2. Download the Project
 
-Extract task-manager.zip to your web server root (e.g., C:\xampp\htdocs).
+1. Unzip the project into C:\xampp\htdocs (Windows) or your web server root.
+   
+Example: C:\xampp\htdocs\task-manager
 
-3. Install PHP Dependencies
+
+3. Start XAMPP services
+
+Start Apache and MySQL in the XAMPP Control Panel.
+
+
+
+3. Install PHP dependencies
+
 composer install
 
 
-This recreates the vendor folder.
+4. Install Node.js dependencies
 
-4. Install Node.js Dependencies
 npm install
-npm run dev
 
 
-This recreates node_modules and compiles frontend assets. Keep this terminal open for live updates.
+5. Run migrations
 
-5. Run Migrations
 php artisan migrate
 
 
-Applies database migrations.
-
-6. Run the Application
-
+6. Run the application
 Open two terminals:
 
-Terminal 1 – Compile Frontend Assets
-
-npm run dev
-
-
-Terminal 2 – Start Laravel Server
+Terminal 1 – Start Laravel server
 
 php artisan serve
 
+Terminal 2 – Compile frontend assets
 
-Access the app at http://127.0.0.1:8000
+npm run dev
 
-## Features
+Access the app at: http://127.0.0.1:8000
 
-* Add, edit, delete, and mark tasks as completed
-* Search and filter tasks by keyword and status
-* Dashboard with tasks grouped by status (Pending, In Progress, Completed)
-* SweetAlert confirmation pop-ups for deletions and task completion
-* Responsive UI with TailwindCSS
+---
 
-## System Planning Document
+Author
 
-* Tech stack overview
-* Database schema & ER diagram
-* Application flow
-* Security & best practices
-
-
-
-* Additional features & future enhancements
-
+Developed by: M.F.F.Infaza 
+Date: 6th September 2025
