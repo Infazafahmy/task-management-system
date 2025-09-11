@@ -13,6 +13,10 @@ User registration and login (Laravel Breeze)
 
 Add, edit, delete, and mark tasks as completed
 
+Assign tasks to other users
+
+Postpone tasks with reason and history log
+
 Dashboard grouped by task status
 
 Search and filter tasks
